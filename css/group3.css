@@ -33,7 +33,7 @@ Code snippet by maridlcrmn */
     outline: none;
     margin: 20px auto;
     position: relative;
-    top: 225px;
+    top: 325px;
 }
 html {
   scroll-behavior: smooth;
@@ -96,6 +96,11 @@ body {
   z-index: 20;
   color: white;
 }
+
+.hidden{
+  display: none;
+}
+
 #quiz{
   position: relative;
   top: 575px;
@@ -106,8 +111,15 @@ body {
 }
 hgroup{
   position: relative;
-  top: 225px;
+  top: 325px;
 }
-img{
-  height: 300px;
+
+iframe{
+  position: relative;
+  top: 1240px;
+}
+
+h4{
+  position: relative;
+  top: 325px;
 }
