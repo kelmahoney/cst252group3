@@ -32,6 +32,8 @@ Code snippet by maridlcrmn */
     border-color: red;
     outline: none;
     margin: 20px auto;
+    position: relative;
+    top: 225px;
 }
 html {
   scroll-behavior: smooth;
@@ -93,4 +95,19 @@ body {
   left: 5%;
   z-index: 20;
   color: white;
+}
+#quiz{
+  position: relative;
+  top: 575px;
+}
+#submit{
+  position: relative;
+  top: 575px;
+}
+hgroup{
+  position: relative;
+  top: 225px;
+}
+img{
+  height: 300px;
 }
