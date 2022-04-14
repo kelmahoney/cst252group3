@@ -1,7 +1,5 @@
 //crebit: dcode (https://www.youtube.com/watch?v=kp0LctdmwzE)//
 //navigation
-
-//crebit: dcode (https://www.youtube.com/watch?v=kp0LctdmwzE)//
 function activateNavigation() {
   const sections = document.querySelectorAll(".section");
   const navContainer = document.createElement("nav");
