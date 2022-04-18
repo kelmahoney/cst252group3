@@ -116,7 +116,7 @@ body {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 125px;
-  
+
 }
 
 #submit{
@@ -152,5 +152,9 @@ p{
   font-size: 20px;
   text-transform: lowercase;
   margin: 25px;
-
+}
+h3{
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  padding: 20px;
 }
