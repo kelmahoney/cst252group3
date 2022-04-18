@@ -157,4 +157,5 @@ h3{
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
   padding: 20px;
+  text-transform: lowercase;
 }
