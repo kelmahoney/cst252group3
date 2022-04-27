@@ -169,7 +169,8 @@ h3{
   padding: 100px;
 }
 h6{
-  font-size: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 h7{
   font-size: 16px;
