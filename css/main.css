@@ -1,29 +1,4 @@
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn */
 
-.hero {
-    position: relative;
-    padding-top: 200px;
-    top:-1760px;
-    left: 50%;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-    font-size: 6em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
 .btn.btn-lg {padding: 10px 40px;}
 .btn.btn-hero,
 .btn.btn-hero:hover,
@@ -39,22 +14,6 @@ Code snippet by maridlcrmn */
 
 
 }
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "Quicksand", sans-serif;
-  margin: 0;
-}
-.sec {
-  height: 150vh;
-}
-section{
-position: absolute;
-height: 150vh;
-
-}
-
 #home {
   background-image: linear-gradient(#7da0db, #395e9e);
 }
@@ -63,52 +22,6 @@ height: 150vh;
 }
 #contact {
   background-image: linear-gradient(#1c3c73, #0a1f42);
-}
-.nav {
-  --nav-gap: 15px;
-  padding: var(--nav-gap);
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.nav-item {
-  align-items: center;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: var(--nav-gap);
-}
-.nav-link:hover ~ .nav-label {
-  opacity: 1;
-}
-.nav-label {
-  color: #ffff;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-.nav-link {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  height: var(--nav-gap);
-  margin-left: var(--nav-gap);
-  transition: transform 0.1s;
-  width: var(--nav-gap);
-}
-.nav-link-selected {
-  background: #fff;
-  transform: scale(1.4);
-}
-.carousel-content {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-  z-index: 20;
-  color: white;
-}
-
-.hidden{
-  display: none;
 }
 
 #quiz{
@@ -137,6 +50,10 @@ height: 150vh;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
 }
+#info{
+  columns: 2;
+  padding: 100px;
+}
 
 h4{
   font-family: "Quicksand", sans-serif;
@@ -152,36 +69,32 @@ h5{
   position: inherit;
   top: 30px;
 }
-p{
-  font-family: "Quicksand", sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: lowercase;
-  margin: 25px;
-}
+
 h3{
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
   padding: 20px;
   text-transform: lowercase;
 }
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
-}
-#info{
-  columns: 2;
-  padding: 100px;
-}
+
 h6{
   font-size: 30px;
   text-transform: uppercase;
+  background-color: #395e9e;
+}
+
+h7{
+  font-size: 20px;
+  text-transform: lowercase;
+  line-height: 1;
+  background-color: #395e9e;
 
 }
-h7{
-  font-size: 16px;
-  text-transform: lowercase;
-  line-height: 1.5;
 
+p{
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: lowercase;
+  margin: 25px;
 }

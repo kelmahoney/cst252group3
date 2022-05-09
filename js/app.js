@@ -20,6 +20,7 @@ particlesJS('particles-js',
         "density": {
           "enable": true,
           "value_area": 800
+
         }
       },
       "color": {
@@ -38,6 +39,7 @@ particlesJS('particles-js',
           "src": "img/bottle.png",
           "width": 100,
           "height": 100
+          
         }
       },
       "opacity": {

@@ -1,50 +1,5 @@
-//Kelly, Jerermy
+//Jerermy
 // 4.27.22
-//(c) dcode (https://www.youtube.com/watch?v=kp0LctdmwzE)//
-//(c) Nash Vail (https://www.cssscript.com/animated-particles-background-pure-javascript/)
-//navigation
-function activateNavigation() {
-  const sections = document.querySelectorAll(".section");
-  const navContainer = document.createElement("nav");
-  const navItems = Array.from(sections).map((section) => {
-    return `
-                    <div class="nav-item" data-for-section="${section.id}">
-                        <a href="#${section.id}" class="nav-link"></a>
-                        <span class="nav-label">${section.dataset.label}</span>
-                    </div>
-                `;
-  });
-
-  navContainer.classList.add("nav");
-  navContainer.innerHTML = navItems.join("");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      document.querySelectorAll(".nav-link").forEach((navLink) => {
-        navLink.classList.remove("nav-link-selected");
-      });
-
-      const visibleSection = entries.filter((entry) => entry.isIntersecting)[0];
-
-      document
-        .querySelector(
-          `.nav-item[data-for-section="${visibleSection.target.id}"] .nav-link`
-        )
-        .classList.add("nav-link-selected");
-    },
-    { threshold: 0.5 }
-  );
-
-  sections.forEach((section) => observer.observe(section));
-
-  document.body.appendChild(navContainer);
-}
-
-activateNavigation();
-
-// end of navigation
-
-
 //Function that builds quiz
 function quizBuilder(){
   const output = [];
@@ -179,46 +134,3 @@ quizBuilder();
 
 //Runs the result displaying function when the button is pressed
 submitButton.addEventListener("click", resultDisplay);
-
-//particles https://www.cssscript.com/animated-particles-background-pure-javascript/
-//const colors = ["#ffff", "#8caee6", "#4a6ea8", "#2b4c82", "#122e5c"];
-
-// const numBalls = 100;
-// const balls = [];
-//
-// for (let i = 0; i < numBalls; i++) {
-//   let ball = document.createElement("div");
-//   ball.classList.add("ball");
-//   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
-//   ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-//   ball.style.top = `${Math.floor(Math.random() * 275)}vh`;
-//   ball.style.transform = `scale(${Math.random()})`;
-//   ball.style.width = `${Math.random()}em`;
-//   ball.style.height = ball.style.width;
-//
-//   balls.push(ball);
-//   document.body.append(ball);
-// }
-//
-// // Keyframes
-// balls.forEach((el, i, ra) => {
-//   let to = {
-//     x: Math.random() * (i % 2 === 0 ? -11 : 11),
-//     y: Math.random() * 12
-//   };
-//
-//   let anim = el.animate(
-//     [
-//       { transform: "translate(0, 0)" },
-//       { transform: `translate(${to.x}rem, ${to.y}rem)` }
-//     ],
-//     {
-//       duration: (Math.random() + 1) * 2000, // random duration
-//       direction: "alternate",
-//       fill: "both",
-//       iterations: Infinity,
-//       easing: "ease-in-out"
-//     }
-//   );
-// });
-//end of particles
