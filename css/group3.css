@@ -49,9 +49,10 @@ body {
 .sec {
   height: 150vh;
 }
-.section{
+section{
 position: absolute;
-width: 150vh;
+height: 150vh;
+
 }
 
 #home {
