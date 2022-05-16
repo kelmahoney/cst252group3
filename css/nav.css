@@ -1,0 +1,16 @@
+
+.sec {
+  height: 190vh;
+}
+
+
+}
+#home {
+  background-image: linear-gradient(#7da0db, #395e9e);
+}
+#about {
+  background-image: linear-gradient(#395e9e, #1c3c73);
+}
+#contact {
+  background-image: linear-gradient(#1c3c73, #0a1f42);
+}
