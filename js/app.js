@@ -3,7 +3,7 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 20,
+        "value": 30,
         "density": {
           "enable": true,
           "value_area": 800
@@ -24,8 +24,8 @@ particlesJS('particles-js',
         },
         "image": {
           "src": "img/bottle.png",
-          "width": 100,
-          "height": 100
+          "width": 300,
+          "height": 300
         }
       },
       "opacity": {
@@ -39,7 +39,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 30,
         "random": true,
         "anim": {
           "enable": false,
