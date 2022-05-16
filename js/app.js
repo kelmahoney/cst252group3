@@ -39,7 +39,13 @@ particlesJS('particles-js',
           "src": "img/bottle.png",
           "width": 100,
           "height": 100
-          
+
+        },
+        "image1": {
+          "src": "img/bottle.png",
+          "width": 100,
+          "height": 100
+
         }
       },
       "opacity": {
